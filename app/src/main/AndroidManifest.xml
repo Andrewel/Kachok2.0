@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.secuso.kachok">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.bel.kachok">
 
     <supports-screens
         android:anyDensity="true"
@@ -8,34 +9,42 @@
         android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true"
-        android:xlargeScreens="true"/>
+        android:xlargeScreens="true" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tutorial.TutorialActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".tutorial.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".activities.AboutActivity"
             android:label="@string/action_about"
@@ -43,7 +52,7 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="org.bel.kachok.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.HelpActivity"
@@ -53,7 +62,34 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="org.bel.kachok.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.WebActivity"
+            android:label="@string/action_muscles1"
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
+            android:name=".activities.KachokActivity"
+            android:label="@string/action_muscles1"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.activities.MainActivity" />
+
+        <activity
+            android:name=".activities.KachokActivity1"
+            android:label="@string/action_muscles2"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.activities.MainActivity" />
+
         </activity>
         <activity
             android:name=".activities.TrainingActivity"
@@ -61,7 +97,7 @@
             android:parentActivityName=".activities.TrainingOverviewActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.TrainingOverviewActivity" />
+                android:value="org.bel.kachok.activities.TrainingOverviewActivity" />
         </activity>
         <activity
             android:name=".activities.TrainingOverviewActivity"
@@ -69,7 +105,7 @@
             android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="org.bel.kachok.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.PreferencesActivity"
@@ -77,7 +113,7 @@
             android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="org.bel.kachok.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.MotivationAlertTextsActivity"
@@ -85,7 +121,7 @@
             android:parentActivityName=".activities.PreferencesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.PreferencesActivity" />
+                android:value="org.bel.kachok.activities.PreferencesActivity" />
         </activity>
         <activity
             android:name=".activities.WalkingModesActivity"
@@ -93,7 +129,7 @@
             android:parentActivityName=".activities.PreferencesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.PreferencesActivity" />
+                android:value="org.bel.kachok.activities.PreferencesActivity" />
         </activity>
         <activity
             android:name=".activities.WalkingModeLearningActivity"
@@ -101,7 +137,7 @@
             android:parentActivityName=".activities.WalkingModesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.WalkingModesActivity" />
+                android:value="org.bel.kachok.activities.WalkingModesActivity" />
         </activity>
 
         <receiver android:name=".receivers.OnBootCompletedBroadcastReceiver">
@@ -129,13 +165,227 @@
                 <action android:name="org.secuso.privacyfriendlystepcounter.WALKING_MODE_CHANGED" />
             </intent-filter>
         </receiver>
-
-        <receiver android:name=".receivers.MotivationAlertReceiver"/>
+        <receiver android:name=".receivers.MotivationAlertReceiver" />
 
         <service android:name=".services.AccelerometerStepDetectorService" />
         <service
             android:name=".services.HardwareStepDetectorService"
             android:stopWithTask="false" />
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TextNoteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_textnote"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".ChecklistNoteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_checklistnote"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".ManageCategoriesActivity"
+            android:label="@string/title_manage_categories"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_manage_categories"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".RecycleActivity"
+            android:label="@string/title_recycle_bin"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".AudioNoteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_audionote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SketchActivity"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity2"
+            android:label="@string/title_settings"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".HelpActivity2"
+            android:label="@string/title_help"
+            android:parentActivityName=".activities.KachokActivity" />
+        <activity
+            android:name=".AboutActivity2"
+            android:label="@string/title_about"
+            android:parentActivityName=".activities.KachokActivity" />
+        <!--group-->
+        <activity
+            android:name=".activities.mActivity1"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity2"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity3"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity4"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity5"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity6"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mActivity7"
+            android:label="@string/title_sketchnote"
+            android:parentActivityName=".activities.KachokActivity"
+            android:screenOrientation="portrait" />
+
+
+
+        <service android:name=".NotificationService" />
+
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="org.bel.kachok"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider_paths" />
+        </provider>
+
+        <activity
+            android:name=".SettingsActivity3"
+            android:label="@string/nav_menu_settings"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.MainActivity33" />
+        </activity>
+        <activity
+            android:name=".SearchActivity3"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.activities.MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".WeatherForecastActivity3"
+            android:label="@string/label_activity_weather_forecast"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.MainActivity33" />
+        </activity>
+        <activity
+            android:name=".MainActivity33"
+            android:label="@string/label_activity_graphs"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GraphsActivity3"
+            android:label="@string/label_activity_graphs"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.bel.kachok.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LicenseActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.ActionBar"
+            tools:ignore="GoogleAppIndexingUrlError">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:pathPrefix="/android_asset/licenses/"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.StartupReceiver3">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".widget.LessWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="org.asdtm.goodweather.action.FORCED_APPWIDGET_UPDATE" />
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_THEME_CHANGED" />
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_UPDATE_PERIOD_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_less" />
+        </receiver>
+        <receiver android:name=".widget.MoreWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="org.asdtm.goodweather.action.FORCED_APPWIDGET_UPDATE" />
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_THEME_CHANGED" />
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_UPDATE_PERIOD_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_more" />
+        </receiver>
+
+        <service android:name=".service.NotificationService3" />
+        <service android:name=".widget.LessWidgetService" />
+        <service android:name=".widget.MoreWidgetService" />
+        <service android:name=".service.CurrentWeatherService" />
+
+
     </application>
 
 </manifest>

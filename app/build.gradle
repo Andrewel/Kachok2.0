@@ -4,11 +4,12 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId 'org.secuso.kachok'
-        minSdkVersion 16
+        applicationId 'org.bel.kachok'
+        minSdkVersion 17
         targetSdkVersion 25
         versionCode 6
         versionName "1.0.5"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -26,10 +27,19 @@ repositories {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support:design:25.2.0'
-    compile 'com.android.support:support-v4:25.2.0'
-    compile 'com.android.support:cardview-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+
+    compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support:recyclerview-v7:25.2.0'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.simplify:ink:0.2.2'
+    compile 'petrov.kristiyan.colorpicker:colorpicker-library:1.1.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:cardview-v7:25.3.0'
+    compile 'com.android.support:support-v4:25.3.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }

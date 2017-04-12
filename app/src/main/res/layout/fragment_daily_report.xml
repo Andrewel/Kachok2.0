@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.secuso.kachok.fragments.DailyReportFragment">
+    tools:context="org.bel.kachok.fragments.DailyReportFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
