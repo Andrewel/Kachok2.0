@@ -14,7 +14,7 @@
     <string name="action_training">Training</string>
     <string name="action_muscles">Muscles</string>
     <string name="action_weather">Weather</string>
-    <string name="action_notes">Notesss</string>
+    <string name="action_notes">Notes</string>
     <!-- Menu Muscles-->
     <string name="action_muscles1">Muscles Front</string>
     <string name="action_muscles2">Muscles Back</string>
@@ -313,6 +313,9 @@
 
     <string name="dialog_option_delete">Delete</string>
     <string name="dialog_option_restore">Restore</string>
+    <!--Music-->
+    <string name="nav_music">Music</string>
+
     <!--MapLocationKachok-->
     <string name="map_location">Map</string>
 

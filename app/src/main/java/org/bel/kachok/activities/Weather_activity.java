@@ -1,7 +1,7 @@
 package org.bel.kachok.activities;
 
 /**
- * Created by BEI on 05.04.2017.
+ * Created by BEI on 12.04.2017.
  */
 
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 
 import org.bel.kachok.R;
 
-public class mActivity1 extends AppCompatActivity {
+public class Weather_activity extends AppCompatActivity {
     private WebView view; //membuat variabel view agar bisa akses method onKeyDown
 
     @Override
@@ -25,7 +25,7 @@ public class mActivity1 extends AppCompatActivity {
         view = (WebView) this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("https://iq-body.ru/exercises/i-zhim-gantelej-sidja"); //try js alert
+        view.loadUrl("https://yandex.by/pogoda/minsk"); //try js alert
         view.setWebChromeClient(new WebChromeClient()); // adding js alert support
         getSupportActionBar().hide();
     }

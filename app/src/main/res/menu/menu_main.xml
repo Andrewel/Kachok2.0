@@ -9,19 +9,19 @@
             android:orderInCategory="100" app:showAsAction="never" />
         <item android:id="@+id/menu_muscles" android:title="@string/action_muscles" android:icon="@drawable/ic_directions_run"
             android:orderInCategory="100" app:showAsAction="never" />
-        <item android:id="@+id/menu_weather" android:title="@string/action_weather" android:icon="@drawable/ic_directions_run"
-            android:orderInCategory="100" app:showAsAction="never" />
-        <item android:id="@+id/menu_notes" android:title="@string/action_notes" android:icon="@drawable/ic_directions_run"
-            android:orderInCategory="100" app:showAsAction="never" />
-        <item
-            android:id="@+id/nav_all"
-            android:icon="@drawable/ic_home_black_24dp"
-            android:title="@string/nav_all"/>
-        <item
-            android:id="@+id/nav_trash"
-            android:icon="@drawable/ic_my_location_white_24dp"
-            android:title="@string/map_location"/>
     </group>
+
+    <group>
+        <item android:id="@+id/menu_map" android:title="@string/map_location" android:icon="@drawable/ic_my_location_white_24dp"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/menu_music" android:title="@string/nav_music" android:icon="@drawable/ic_play_arrow_black_24dp"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/menu_weather" android:title="@string/action_weather" android:icon="@drawable/ic_current_weather_black_24dp"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/menu_notes" android:title="@string/action_notes" android:icon="@drawable/ic_feedback"
+            android:orderInCategory="100" app:showAsAction="never" />
+</group>
+
     <group android:id="@+id/menu_group_settings" android:checkableBehavior="all">
         <item android:id="@+id/menu_settings" android:title="@string/action_settings" android:icon="@drawable/ic_settings"
             android:orderInCategory="100" app:showAsAction="never" />

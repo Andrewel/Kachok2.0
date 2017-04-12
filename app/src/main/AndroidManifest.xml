@@ -65,6 +65,14 @@
                 android:value="org.bel.kachok.activities.MainActivity" />
         </activity>
         <activity
+            android:name=".activities.Weather_activity"
+            android:label="@string/action_muscles1"
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
             android:name=".activities.WebActivity"
             android:label="@string/action_muscles1"
             android:parentActivityName=".activities.MainActivity"

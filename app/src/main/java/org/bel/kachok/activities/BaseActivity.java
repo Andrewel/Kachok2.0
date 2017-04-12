@@ -182,7 +182,7 @@ public class BaseActivity extends AppCompatActivity implements OnNavigationItemS
                 createBackStack(intent);
                 break;
             case R.id.menu_weather:
-                intent = new Intent(this, MainActivity33.class);
+                intent = new Intent(this, Weather_activity.class);
                 createBackStack(intent);
                 break;
             case R.id.menu_about:
