@@ -17,22 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import org.bel.kachok.BaseActivity3;
-import org.bel.kachok.BitcoinDonationDialog;
-import org.bel.kachok.GraphsActivity3;
 import org.bel.kachok.HelpActivity2;
-import org.bel.kachok.LicenseActivity;
-import org.bel.kachok.MainActivity2;
-import org.bel.kachok.MainActivity33;
-import org.bel.kachok.ManageCategoriesActivity;
 import org.bel.kachok.R;
-import org.bel.kachok.RecycleActivity;
-import org.bel.kachok.SearchActivity3;
-import org.bel.kachok.SettingsActivity;
-import org.bel.kachok.SettingsActivity3;
-import org.bel.kachok.SketchActivity;
-import org.bel.kachok.WeatherForecastActivity3;
-import org.bel.kachok.models.WalkingMode;
 
 
 /**
@@ -173,7 +159,7 @@ public class BaseActivity extends AppCompatActivity implements OnNavigationItemS
                 intent = new Intent(this, KachokActivity.class);
                 createBackStack(intent);
                 break;
-            case R.id.nav_trash:
+            case R.id.menu_map:
                 intent = new Intent(this, WebActivity.class);
                 createBackStack(intent);
                 break;
@@ -183,6 +169,10 @@ public class BaseActivity extends AppCompatActivity implements OnNavigationItemS
                 break;
             case R.id.menu_weather:
                 intent = new Intent(this, Weather_activity.class);
+                createBackStack(intent);
+                break;
+            case R.id.menu_music:
+                intent = new Intent(this, GifActivity2.class);
                 createBackStack(intent);
                 break;
             case R.id.menu_about:

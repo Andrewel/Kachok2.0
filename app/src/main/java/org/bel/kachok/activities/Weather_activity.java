@@ -28,6 +28,8 @@ public class Weather_activity extends AppCompatActivity {
         view.loadUrl("https://yandex.by/pogoda/minsk"); //try js alert
         view.setWebChromeClient(new WebChromeClient()); // adding js alert support
         getSupportActionBar().hide();
+
+
     }
 
     private class MyBrowser extends WebViewClient {

@@ -65,6 +65,44 @@
                 android:value="org.bel.kachok.activities.MainActivity" />
         </activity>
         <activity
+            android:name=".activities.GifActivity2"
+            android:label="@string/action_muscles1"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
+            android:name=".activities.GifActivity"
+            android:label="@string/action_muscles1"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
+            android:name=".activities.GifWebView"
+            android:label="@string/action_muscles1"
+            android:hardwareAccelerated="false"
+
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
+            android:name=".activities.Music_activity"
+            android:label="@string/action_muscles1"
+            android:parentActivityName=".activities.MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.bel.kachok.activities.MainActivity" />
+        <activity
             android:name=".activities.Weather_activity"
             android:label="@string/action_muscles1"
             android:parentActivityName=".activities.MainActivity"

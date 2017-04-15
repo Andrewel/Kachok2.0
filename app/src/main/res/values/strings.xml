@@ -516,4 +516,30 @@
     <string name="fab_checklist" />
     <string name="fab_audio" />
     <string name="fab_text" />
+
+    <!-- Gifapp -->
+    <string name="loading">Loading</string>
+    <string name="activity">Activity</string>
+    <string name="deadlift">Deadlift...</string>
+
+
+    <string-array name="gifs">
+        <item>@mipmap/gif1</item>
+        <item>@mipmap/gif2</item>
+        <item>@mipmap/gif3</item>
+        <item>@mipmap/gif4</item>
+        <item>@mipmap/gif5</item>
+        <item>@mipmap/gif6</item>
+        <item>@mipmap/gif7</item>
+        <item>@mipmap/gif8</item>
+        <item>@mipmap/gif9</item>
+        <item>@mipmap/gif10</item>
+        <item>@mipmap/gif11</item>
+        <item>@mipmap/gif12</item>
+        <item>@mipmap/gif13</item>
+        <item>@mipmap/gif14</item>
+        <item>@mipmap/gif15</item>
+
+
+    </string-array>
 </resources>
