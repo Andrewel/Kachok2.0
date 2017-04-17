@@ -520,7 +520,8 @@
     <!-- Gifapp -->
     <string name="loading">Loading</string>
     <string name="activity">Activity</string>
-    <string name="deadlift">Deadlift...</string>
+    <string name="deadlift">...</string>
+    <string name="get_back"><![CDATA[<--- Get Back]]></string>
 
 
     <string-array name="gifs">

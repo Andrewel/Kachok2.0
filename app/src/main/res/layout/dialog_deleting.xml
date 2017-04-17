@@ -15,7 +15,7 @@
         android:id="@+id/gif1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        custom:gif="@mipmap/gif11"/>
+        custom:gif="@mipmap/gif10"/>
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"

@@ -172,7 +172,7 @@ public class BaseActivity extends AppCompatActivity implements OnNavigationItemS
                 createBackStack(intent);
                 break;
             case R.id.menu_music:
-                intent = new Intent(this, GifActivity2.class);
+                intent = new Intent(this, Music_activity.class);
                 createBackStack(intent);
                 break;
             case R.id.menu_about:

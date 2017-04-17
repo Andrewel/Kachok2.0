@@ -1,7 +1,7 @@
 package org.bel.kachok.activities;
 
 /**
- * Created by BEI on 05.04.2017.
+ * Created by BEI on 17.04.2017.
  */
 
 import android.os.Bundle;
@@ -26,7 +26,7 @@ import com.cunoraz.gifview.library.GifView;
 import org.bel.kachok.R;
 import org.bel.kachok.fragments.GifFragment;
 
-public class mActivity2 extends AppCompatActivity {
+public class Chest_activity extends AppCompatActivity {
     private WebView view; //membuat variabel view agar bisa akses method onKeyDown
     private Button pauseButton;
     private Button playButton;
@@ -47,7 +47,7 @@ public class mActivity2 extends AppCompatActivity {
         view = (WebView) this.findViewById(R.id.WebView2);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("https://iq-body.ru/exercises/i-zgim-shtangi-lezga"); //try js alert
+        view.loadUrl("https://iq-body.ru/exercises/i-stanovaya-tuaga-klassicheskaua"); //try js alert
         view.setWebChromeClient(new WebChromeClient()); // adding js alert support
 
         gifView = (GifView) findViewById(R.id.gif1);
@@ -57,7 +57,6 @@ public class mActivity2 extends AppCompatActivity {
         dialogButton = (Button) findViewById(R.id.button_dialog);
         fragmentButton = (Button) findViewById(R.id.fragment);
         toastButton = (Button) findViewById(R.id.toast);
-        getSupportActionBar().hide();
 
 
         fragmentButton.setOnClickListener(new OnClickListener() {

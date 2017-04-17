@@ -23,7 +23,7 @@ import org.bel.kachok.TextNoteActivity;
 public class KachokActivity extends AppCompatActivity  implements View.OnClickListener
 {
     FloatingActionsMenu fabMenu;
-    ImageButton imageButton2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
