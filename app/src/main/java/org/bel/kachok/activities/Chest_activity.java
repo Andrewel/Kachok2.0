@@ -4,6 +4,7 @@ package org.bel.kachok.activities;
  * Created by BEI on 17.04.2017.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
@@ -26,7 +27,7 @@ import com.cunoraz.gifview.library.GifView;
 import org.bel.kachok.R;
 import org.bel.kachok.fragments.GifFragment;
 
-public class Chest_activity extends AppCompatActivity {
+public class Chest_activity extends AppCompatActivity implements View.OnClickListener {
     private WebView view; //membuat variabel view agar bisa akses method onKeyDown
     private Button pauseButton;
     private Button playButton;
@@ -58,6 +59,7 @@ public class Chest_activity extends AppCompatActivity {
         fragmentButton = (Button) findViewById(R.id.fragment);
         toastButton = (Button) findViewById(R.id.toast);
 
+        findViewById(R.id.getback2).setOnClickListener(this);
 
         fragmentButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -186,5 +188,12 @@ public class Chest_activity extends AppCompatActivity {
         builder.show();
 
     }
-
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.getback:
+                startActivity(new Intent(getApplication(), MainActivity.class));
+                break;
+        }
+    }
 }
