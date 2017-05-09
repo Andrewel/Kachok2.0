@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -182,7 +181,7 @@ public class GifActivity2 extends AppCompatActivity {
 
     public void openDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AppCompatAlertDialogStyle);
-        builder.setView(getLayoutInflater().inflate(R.layout.dialog_deleting,null));
+        builder.setView(getLayoutInflater().inflate(R.layout.mactivity1,null));
         builder.show();
 
     }

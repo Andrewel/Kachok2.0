@@ -52,7 +52,7 @@ public class KachokActivity extends AppCompatActivity  implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.fab_m1:
-                startActivity(new Intent(getApplication(), mActivity1.class));
+                startActivity(new Intent(getApplication(), mActivity5.class));
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_checklist:
@@ -60,19 +60,19 @@ public class KachokActivity extends AppCompatActivity  implements View.OnClickLi
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_m2:
-                startActivity(new Intent(getApplication(), mActivity2.class));
+                startActivity(new Intent(getApplication(), mActivity1.class));
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_m3:
-                startActivity(new Intent(getApplication(), mActivity3.class));
+                startActivity(new Intent(getApplication(), mActivity2.class));
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_m4:
-                startActivity(new Intent(getApplication(), mActivity4.class));
+                startActivity(new Intent(getApplication(), mActivity3.class));
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_m5:
-                startActivity(new Intent(getApplication(), mActivity5.class));
+                startActivity(new Intent(getApplication(), mActivity4.class));
                 fabMenu.collapseImmediately();
                 break;
             case R.id.fab_m6:

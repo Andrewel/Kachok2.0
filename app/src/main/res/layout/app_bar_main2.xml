@@ -58,7 +58,7 @@
             fab:fab_title="@string/fab_audio"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_checklist"
+            android:id="@+id/fab_m8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_format_list_bulleted_white_24dp"

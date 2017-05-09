@@ -22,6 +22,7 @@
     <string name="action_muscles4">Shoulders</string>
     <string name="action_muscles5">Biceps</string>
     <string name="action_muscles6">Leg muscles</string>
+    <string name="action_muscles7"> </string>
 
 
     <!-- AboutActivity2-->
@@ -320,13 +321,14 @@
     <string name="map_location">Map</string>
 
     <!--Front muscles-->
-    <string name="fab_m1">Shoulders</string>
-    <string name="fab_m2">Chest</string>
-    <string name="fab_m3">Biceps</string>
-    <string name="fab_m4">ForeArms</string>
-    <string name="fab_m5">New checklist</string>
+    <string name="fab_m1">Neck</string>
+    <string name="fab_m2">Shoulders</string>
+    <string name="fab_m3">Chest</string>
+    <string name="fab_m4">Biceps</string>
+    <string name="fab_m5">ForeArms</string>
     <string name="fab_m6">Press</string>
     <string name="fab_m7">Legs muscles</string>
+    <string name="fab_m8">ggg</string>
 
 
 

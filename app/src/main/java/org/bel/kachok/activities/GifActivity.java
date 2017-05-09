@@ -149,7 +149,7 @@ public class GifActivity extends AppCompatActivity {
 
     public void openDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AppCompatAlertDialogStyle);
-        builder.setView(getLayoutInflater().inflate(R.layout.dialog_deleting,null));
+        builder.setView(getLayoutInflater().inflate(R.layout.mactivity1,null));
         builder.show();
 
     }

@@ -15,7 +15,7 @@ import android.webkit.WebViewClient;
 import org.bel.kachok.R;
 
 public class Weather_activity extends AppCompatActivity {
-    private WebView view; //membuat variabel view agar bisa akses method onKeyDown
+    private WebView view; //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,8 @@ public class Weather_activity extends AppCompatActivity {
         view = (WebView) this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("https://yandex.by/pogoda/minsk"); //try js alert
-        view.setWebChromeClient(new WebChromeClient()); // adding js alert support
+        view.loadUrl("https://yandex.by/pogoda/minsk"); //
+        view.setWebChromeClient(new WebChromeClient()); //
         getSupportActionBar().hide();
 
 
@@ -41,13 +41,12 @@ public class Weather_activity extends AppCompatActivity {
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        //ketika disentuh tombol back
+        //
         if ((keyCode == KeyEvent.KEYCODE_BACK) && view.canGoBack()) {
-            view.goBack(); //method goback() dieksekusi untuk kembali pada halaman sebelumnya
+            view.goBack(); //
             return true;
         }
-        // Jika tidak ada history (Halaman yang sebelumnya dibuka)
-        // maka akan keluar dari activity
+        //
         return super.onKeyDown(keyCode, event);
     }
 
