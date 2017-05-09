@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kachok</string>
     <string name="app_name2">Go to work</string>
-    <string name="app_name_long">Fucking Kachok</string>
+    <string name="app_name_long">True Kachok</string>
 
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
@@ -186,7 +186,7 @@
     <!-- /others -->
 
     <!-- welcome dialog -->
-    <string name="welcome">Welcome ///// pussies!</string>
+    <string name="welcome">Welcome ///// dude!</string>
     <string name="welcome_text">Super puper new Kachok can count your steps in background and provides an overview about walked steps.</string>
     <string name="slide_2_title">Customize</string>
     <string name="slide_2_desc">To improve the calculation of the calories you have burned by walking please customize your personal settings.</string>
