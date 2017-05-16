@@ -39,6 +39,7 @@
             fab:fab_size="mini"
             fab:fab_title="@string/fab_m1" />
 
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_m2"
             android:layout_width="wrap_content"
